@@ -6,8 +6,9 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 import App from './containers/App';
+import { searchRobots } from './reducers';
 
-const store = createStore(rootReducer);
+const store = createStore(searchRobots);
 
 ReactDOM.render(<App />, document.getElementById('root'));
                 
